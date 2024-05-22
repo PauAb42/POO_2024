@@ -5,9 +5,7 @@
 pais="Italia"
 continente="Europa"
 
-print(pais)
-print(continente)
+print(pais) #Tipo String
+print(continente) #Tipo String
 
-#Tipo de dato de la variable
-# print(type(pais))
-# print(type(continente))
+print("El país {pais}, se encuentra en {Europa}")
