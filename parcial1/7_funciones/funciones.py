@@ -54,9 +54,34 @@
 #Ejemplo 6: Crear un programa que solicite a través de una función la siguiente información: Nombre del Paciente, edad, estatura, tipo de sangre. Utilizar los 4 tipos de funciones
 
 #1.- Función que no recibe parámetros y no regresa valor
-def datos():
+
+def datos1():
     nombre=input("Ingresa el nombre completo del paciente: ")
-    edad=input("Ingresa la edad: ")
-    estatura=input("Ingresa la estatura: ")
-    tipoSangre=input("Ingresa el tipo de sangre: ")
-datos()
+    edad=int(input("Ingresa la edad: "))
+    estatura=float(input("Ingresa la estatura: "))
+    tipo_sangre=input("Ingresa el tipo de sangre: ")
+    print(f"Nombre del paciente: {nombre} \n Edad: {edad} \n Estatura: {estatura} \n Tipo de Sangre {tipo_sangre}")
+datos1()
+
+#2.- Función que no recibe parámetros y regresa valor
+def datos2():
+    nombre=input("Ingresa el nombre completo del paciente: ")
+    edad=int(input("Ingresa la edad: "))
+    estatura=float(input("Ingresa la estatura: "))
+    tipo_sangre=input("Ingresa el tipo de sangre: ")
+    return f"Nombre del paciente: {nombre} \n Edad: {edad} \n Estatura: {estatura} \n Tipo de Sangre {tipo_sangre}"
+print=(datos2())
+
+#3.- Función que recibe parámetros y no regresa valor
+def datos3 (nombre,edad,estatura,sangre):
+    print(f"Nombre del paciente: {nombre} \n Edad: {edad} \n Estatura: {estatura} \n Tipo de Sangre {tipo_sangre}")
+
+nombre=input("Nombre del paciente: ")
+edad=int(input("Ingresa la edad: "))
+estatura=float(input("Ingresa la estatura: "))
+tipo_sangre=input("Ingresa el tipo de sangre: ")
+datos3(nombre,edad,estatura,tipo_sangre)
+
+#4.- Función que recibe parámetros y regresa valor
+
+
