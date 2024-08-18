@@ -5,4 +5,3 @@ def borrarPantalla():
 def esperarTecla():
   print("\n \t \t Oprima cualquier tecla para continuar ...")
   input()
-
